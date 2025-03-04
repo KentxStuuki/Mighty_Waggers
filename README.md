@@ -1,5 +1,15 @@
 # CLOUDCOM FINALS PROJECT: Mighty Waggers
+
 - In this Repository it will contains the frontend, backend, and etc. of the Mighty Waggers website.
+
+## Landing Page:
+- [Migthy Waggers](https://mightywaggers3.wordpress.com/)
+
+
+## Figma Link:
+
+- [Mighty Waggers Wireframe](https://www.figma.com/design/fsnaWoeYQYXTF0Z3zwhx5u/Mighty-Waggers-Mockup?t=kYIxqH2i6gbJLq1t-0)
+
 
 
 ### Contributors
