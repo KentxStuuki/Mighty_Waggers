@@ -1,5 +1,5 @@
-# CLOUDCOM_FINALS_PROJECT
-This Repository is dedicated to hold our CloudCom final project
+# CLOUDCOM FINALS PROJECT: Mighty Waggers
+- In this Repository it will contains the frontend, backend, and etc. of the Mighty Waggers website.
 
 
 ### Contributors
