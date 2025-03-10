@@ -10,3 +10,16 @@ S3 Bucket (obtain static files of WP landing page)
   - images/
     - logo.png
     - background.jpg
+
+EC2 instance (dynamic content)
+- root folder
+  - wp-content/
+    -plugins/
+    -themes/
+    -uploads/
+    ...etc. 
+  - <other wp files>
+  - php-pages/
+    -login.php
+    -process.php
+    ...etc.
