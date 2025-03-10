@@ -1,0 +1,12 @@
+File Structure (layout)
+
+S3 Bucket (obtain static files of WP landing page)
+- s3-bucket-name/
+  - index.html
+  - css/
+    - styles.css
+  - js/
+    -scripts.css
+  - images/
+    - logo.png
+    - background.jpg
