@@ -1,0 +1,447 @@
+:root{
+    /* Color */
+    --primary-color: #2E4057;
+    --secondary-color: #E62C2C;
+    --third-color: #F78D1E;
+    --fourth-color: #FFC857;
+
+    --primary-font-color: #ebebeb;
+
+    --primary-cont-color:linear-gradient(to top, rgba(60, 86, 146, 0.262), rgba(0, 0, 0, 0.633)) ;
+
+    --secondary-cont-color: ;
+
+
+    /* Font Family */
+    --title-font-family: ;
+    --body-font-family: ;
+
+    /* Font Sizes */
+    --big-icon-size: 10rem;
+    --mid-icon-size: 5rem;
+    --small-icon-size: 2rem;
+
+    --default-font-size: 4.5rem;
+
+    --biggest-font-size: 4rem;
+    --bigger-font-size: 3.1rem;
+    --big-font-size: 2rem;
+    --medium-font-size: 1.3rem;
+    --small-font-size: 0.8rem;
+
+    /* Font Weight */
+    --font-mid-bold: 700;
+    --font-max-bold: 900;
+
+    /* Paddings & Margins */
+    /* Button Padding */
+    --btn-pd: 1% 2%;
+
+    --four-percent: 4%;
+    --five-percent: 5%;
+    
+    
+    /* Top and Bottom Padding*/    
+    --big-spacer-tb: 10.8% 0;
+    --mid-spacer-tb: 6% 0;
+    --small-spacer-tb: 2% 0;
+
+    /* Right and Left Padding*/    
+    --big-spacer-lr: 0 10%;
+    --mid-spacer-lr: 0 5% ;
+    --small-spacer-lr: 0 2%;
+
+
+    --big-tb-center-spacer: 10% auto;
+    --mid-tb-center-spacer: 5% auto;
+    --small-tb-center-spacer: 2% auto;
+    --no-tb-center-spacer: 0 auto;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--primary-font-color);
+    font-family: sans-serif;
+}
+
+.highlight{
+    color: var(--third-color);
+}
+
+.highlight-2{
+    color: var(--secondary-color);
+}
+
+/* ============================================== Home Page Style ============================================== */
+.home-introduction-section{
+    background-image: var(--primary-cont-color), url(../img/home/home_intro_img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    color: var(--primary-font-color);
+
+}
+
+.introduction-container{
+    width: 90%;
+    margin: var(--no-tb-center-spacer);
+    padding: var(--big-spacer-tb);
+}
+
+.introduction-container h1{
+    font-size: var(--biggest-font-size);
+    color: var(--primary-font-color);
+
+}
+
+.introduction-container p{
+    line-height: 1.5;
+    font-size: var(--medium-font-size);
+    width: 50%;
+    padding: var(--small-spacer-tb);
+    color: var(--primary-font-color);
+}
+
+/* ============================================== Home Page Button Style ============================================== */
+.home-btn-container{
+    display: flex;
+    gap: 4%;
+}
+
+.service-btn, .about-btn{
+    padding: var(--btn-pd);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: var(--font-mid-bold);
+}
+
+.service-btn{    
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border-radius: 6px;
+    border: 2px solid var(--third-color);
+    transition: 0.6s;
+}
+
+.service-btn:hover{
+    background-color: transparent;
+    color: var(--primary-font-color);
+    border: 2px solid var(--third-color);
+}
+
+.about-btn{
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid var(--third-color);
+    color: var(--primary-font-color);
+    transition: 0.6s;
+}
+
+.about-btn:hover{
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border: 2px solid var(--third-color);
+    border-radius: 6px;
+}
+
+/* ============================================== Home Page Style ============================================== */
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--big-spacer-tb);
+    width: 95%;
+    margin: var(--no-tb-center-spacer);
+}
+
+.services{
+    display: flex;
+    border-radius: 6px;
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    width: 95%;
+    height: auto;
+    margin: var(--no-tb-center-spacer);
+}
+
+.services img{
+    width: auto;
+    height: 12vh;
+    margin: var(--four-percent);
+}
+
+.service-content{
+    padding: var(--five-percent);
+}
+
+.service-content h2{
+    font-size: var(--big-font-size);
+}
+
+.service-content p{
+    font-size: var(--medium-font-size);
+}
+
+
+/* ============================================== Home Page About Section Style ============================================== */
+
+.about-introduction-section{
+    margin: var(--mid-tb-center-spacer);
+    display: flex;
+    width: 95%;
+    height: 85vh;
+    gap: 5%;
+}
+
+.about-introduction-section img{
+    margin: var(--small-spacer-tb);
+    width: auto;
+    height: 80vh;
+}
+
+.about-content-section {
+    margin: var(--mid-spacer-tb);
+}
+
+.about-content-section h3{
+    color: var(--secondary-color);
+    font-weight: var(--font-max-bold);
+    font-size: var(--big-font-size);
+}
+
+
+.about-content-section h2{
+    font-weight: var(--font-max-bold);
+    font-size: var(--bigger-font-size);
+    width: 95%;
+}
+
+.about-content-section p{
+    font-size: var(--medium-font-size);
+    width: 80%;
+    margin: var(--small-spacer-tb);
+}
+
+.list-about-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 2;
+}
+
+
+.list-about-content i{
+    color: var(--primary-color);
+    font-weight: var(--font-max-bold);
+}
+
+.list-about-content p{
+    color: var(--secondary-color);
+    font-weight: var(--font-max-bold);
+}
+
+
+/* ============================================== Home Page Product Section Style ============================================== */
+.product-section{
+    width: 90%;
+    margin: var(--no-tb-center-spacer);
+    height: 100vh;
+}
+
+.product-header h3{
+    font-weight: var(--font-max-bold);
+    font-size: var(--bigger-font-size);
+    width: 80%;
+}
+
+.product-header p{
+    font-size: var(--medium-font-size);
+    width: 80%;
+    margin: var(--small-spacer-tb);
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+}
+
+.product{
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+    padding: var(--five-percent);
+    transition: 0.6s;
+}
+
+.product:hover{
+    box-shadow: 5px 5px;
+    cursor: pointer;
+}
+
+.product img{
+    width: 100%;
+}
+
+.product-content p{
+    padding: var(--small-spacer-tb);
+}
+
+.product-content h4{
+    font-size: var(--medium-font-size);
+}
+
+.product-btn-container{
+    margin: var(--mid-spacer-tb);
+    text-align: center;
+}
+
+.product-btn{
+    border: 2px solid var(--primary-color);
+    text-decoration: none;
+    border-radius: 6px;
+    padding: var(--btn-pd);
+    cursor: pointer;
+    transition: 0.6s;
+    font-weight: var(--font-max-bold);
+}
+
+.product-btn:hover{
+    background-color: var(--third-color);
+    border: 2px solid var(--third-color);
+}
+
+/* ============================================== Home Page Showcase Section Style ============================================== */
+.showcase-section{
+    width: 90%;
+    margin: var(--no-tb-center-spacer);
+    text-align: right;
+}
+
+.showcase-header{
+    margin: var(--small-spacer-tb);
+}
+
+.showcase-header h4{
+    font-size: var(--biggest-font-size);
+    padding: var(--small-spacer-tb);
+}
+
+.showcase-header p{
+    font-size: var(--medium-font-size);
+}
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 8px;
+    margin: var(--no-tb-center-spacer);
+}
+
+.grid-img-1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 4;
+}
+
+.grid-img-2 {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.grid-img-3 {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 2;
+}
+
+.grid-img-4 {
+    grid-column: 5 / span 1;
+    grid-row: 3 / span 2;
+}
+
+.grid-img-5 {
+    grid-column: 6 / span 1;
+    grid-row: 3 / span 2;
+}
+
+
+.grid-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* ============================================== Home Page Quick Contact Section Style ============================================== */
+.quick-contact-section{
+    display: flex;
+    margin: var(--small-spacer-tb);
+}
+
+.quick-content{
+    background-color: var(--primary-color);
+    height: 46vh;
+    width: 100%;
+    margin: var(--small-spacer-tb);
+    color: var(--primary-font-color);
+}
+
+.content{
+    width: 90%;
+    margin: var(--small-tb-center-spacer);
+}
+
+.content h5{
+    padding: var(--small-spacer-tb);
+    font-size: var(--big-font-size);
+    font-weight: var(--font-max-bold);
+}
+
+.content p{
+    width: 50%;
+    font-size: var(--medium-font-size);
+    line-height: 1.5;
+}
+
+.quick-btn-container{
+    margin: var(--small-spacer-tb);
+}
+
+.quick-btn{
+    padding: var(--btn-pd);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: var(--font-mid-bold);
+}
+
+.quick-btn{    
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border-radius: 6px;
+    border: 2px solid var(--third-color);
+    transition: 0.6s;
+}
+
+.quick-btn:hover{
+    background-color: transparent;
+    color: var(--primary-font-color);
+    border: 2px solid var(--third-color);
+}
+
+
+
+.quick-contact-section img{
+    width: auto;
+    height: 54vh;
+    position: absolute;
+    right: 5%;
+    border-radius: 6px;
+}
+
+
+
+
