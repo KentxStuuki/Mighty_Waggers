@@ -39,6 +39,7 @@
 
     --four-percent: 4%;
     --five-percent: 5%;
+    --one-percent: 1%;
     
     
     /* Top and Bottom Padding*/   
@@ -52,6 +53,7 @@
     --mid-spacer-lr: 0 5% ;
     --small-spacer-lr: 0 2%;
 
+    --big-spacer-t-lr: 12% 1% 0 1s%;
 
     --big-spacer-l: 0 0 0 35%;
 
@@ -79,6 +81,32 @@ html{
 
 .highlight-2{
     color: var(--secondary-color);
+}
+
+/* ============================================== Navbar Style ============================================== */
+
+.header-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0e7cc0;
+    width: 90%;
+    margin: var(--no-tb-center-spacer);
+    padding: var(--one-percent);
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+}
+
+nav, ul, li{
+    display: flex;
+    gap: 5%;
+    width: 50%;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--third-color);
+
 }
 
 /* ============================================== Home Page Style ============================================== */
@@ -194,8 +222,7 @@ html{
 
 
 /* ============================================== Home Page About Section Style ============================================== */
-
-.about-introduction-section{
+.home-about-introduction-section{
     margin: var(--mid-tb-center-spacer);
     display: flex;
     width: 95%;
@@ -203,30 +230,30 @@ html{
     gap: 5%;
 }
 
-.about-introduction-section img{
+.home-about-introduction-section img{
     margin: var(--small-spacer-tb);
     width: auto;
     height: 80vh;
 }
 
-.about-content-section {
+.home-about-content-section {
     margin: var(--mid-spacer-tb);
 }
 
-.about-content-section h3{
+.home-about-content-section h3{
     color: var(--third-color);
     font-weight: var(--font-max-bold);
     font-size: var(--big-font-size);
 }
 
 
-.about-content-section h2{
+.home-about-content-section h2{
     font-weight: var(--font-max-bold);
     font-size: var(--bigger-font-size);
     width: 95%;
 }
 
-.about-content-section p{
+.home-about-content-section p{
     font-size: var(--medium-font-size);
     width: 80%;
     margin: var(--small-spacer-tb);
@@ -598,8 +625,462 @@ html{
     width: 100%;
 }
 
-/* ============================================== contact Page  Section Style ============================================== */
+/* ============================================== Product Page Section Style ============================================== */
+.product-header-section{
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    height: 60vh;
+}
 
+.product-header-content{
+    width: 90%;
+    margin: var(--no-tb-center-spacer);
+    padding: var(--small-spacer-tb);
+}
+
+.product-header-content h1{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-max-bold);
+    width: 90%;
+    padding: var(--small-spacer-tb);
+}
+
+.product-header-content p{
+    color: var(--primary-font-color);
+    width: 85%;
+    font-size: var(--medium-font-size);
+}
+
+.product-list-header{
+    width: 90%;
+    text-align: right;
+    margin: var(--small-tb-center-spacer);
+}
+
+.product-list-header h2{
+    font-size: var(--bigger-font-size);
+    font-weight: var(--font-max-bold);
+    color: var(--third-color);
+}
+
+.product-list-header p{
+    font-size: var(--medium-font-size);
+    color: var(--primary-color);
+}
+
+.product-list-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+    width: 90%;
+    margin: var(--small-tb-center-spacer);
+    color: var(--primary-color);
+}
+
+.products-container{
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+    padding: var(--five-percent);
+    transition: 0.6s;
+    display: block;
+}
+
+.products-container:hover{
+    box-shadow: 5px 5px;
+    cursor: pointer;
+}
+
+.products-container img{
+    width: 100%;
+}
+
+.producst-container h3{
+    font-weight: var(--font-max-bold);
+    font-size: var(--medium-font-size);
+}
+
+
+
+/* ============================================== contact Page  Section Style ============================================== */
+.contact-introduction-section{
+    display: flex;
+    background-color: var(--primary-color);
+    height: 76.2vh;
+}
+
+.contact-content-introduction{
+    color: var(--primary-font-color);
+    width: 95%;
+    margin: var(--big-tb-center-spacer);
+}
+
+.contact-introduction-section img{
+    position: absolute;
+    right: 0;
+}
+
+.contact-content-introduction h1{
+    font-size: var(--bigger-font-size);
+    width: 60%;
+    font-weight: var(--font-max-bold);
+}
+
+
+.contact-content-introduction p{
+    font-size: var(--medium-font-size);
+    width: 55%;
+}
+
+.contact-form-section{
+    display: flex;
+    color: var(--primary-color);
+    width: 90%;
+    margin: var(--no-tb-center-spacer);
+}
+
+.contact-form-content-container {
+    width: 50%;
+    padding: var(--five-percent);
+}
+
+.contact-form-content-container img{
+    width: auto;
+    height: 40vh;
+}
+
+.contact-content h2{
+    font-size: var(--bigger-font-size);
+    font-weight: var(--font-max-bold);
+}
+
+.contact-content p{
+    width: 90%;
+    line-height: 1.5;
+    font-size: var(--medium-font-size);
+}
+
+.contact-form-content{
+    width: 80%;
+}
+
+.contact-form-content{
+    padding: 12% 0 0 0;
+}
+
+.contact-form-content label{
+    font-weight: var(--font-max-bold);
+    font-size: var(--medium-font-size);
+    color: var(--primary-color);
+}
+
+.contact-form-content input, textarea{
+    width: 96%;
+    border-radius: 4px;
+    padding: 2%;
+    border: 1px solid var(--primary-color);
+}
+
+.contact-btn{
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border-radius: 6px;
+    border: 2px solid var(--third-color);
+    transition: 0.6s;
+    padding: var(--btn-pd);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: var(--font-mid-bold);
+    width: 100%;
+}
+
+.contact-btn:hover{
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid var(--third-color);
+    color: var(--primary-color);
+    transition: 0.6s;
+}
+
+/* ============================================== Login Page  Section Style ============================================== */
+/* Main Section Styling */
+.login-form-section {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 70vh;
+    border-radius: 10px;    
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
+    transition: 0.6s;
+    margin: var(--big-tb-center-spacer);
+}
+
+.login-form-section:hover{
+    box-shadow: 10px 10px;
+}
+
+
+/* Left Side (Welcome Message) */
+.login-introduction {
+    width: 50%;
+    background-image: linear-gradient(var(--secondary-color), var(--third-color));
+    color: var(--third-color);
+    font-size: var(--bigger-font-size);
+    padding: 10% 2% 0 4%;
+    font-weight: var(--font-max-bold);
+}
+
+.login-introduction img{
+    justify-content: center;
+    display: flex;
+}
+
+/* Right Side (Login Form) */
+.login-form-container {
+    width: 50%;
+    padding: var(--five-percent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Headings */
+.login-form-container h2 {
+    font-size: var(--big-font-size);
+    font-weight: var(--font-max-bold);
+}
+
+.login-form-container p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Form Inputs */
+.login-form-container label {
+    font-size: var(--small-font-size);
+    color: var(--primary-color);
+}
+
+.login-form-container input {
+    width: 95%;
+    padding: 2%;
+    border-radius: 8px;
+    margin: var(--small-spacer-tb);
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Login Button */
+.login-btn {
+    padding: var(--btn-pd);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: var(--font-mid-bold);
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border-radius: 6px;
+    border: 2px solid var(--third-color);
+    transition: 0.6s;
+    width: 100%;
+}
+
+.login-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--third-color);
+}
+
+/* Signup Link */
+.regiter-container a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.regiter-container p, a {
+   margin: var(--small-spacer-tb);
+}
+
+.login-form-container p a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================== Register Page  Section Style ============================================== */
+
+/* Main Section Styling */
+.register-form-section {
+    display: flex;
+    width: 70%;
+    height: 70vh;
+    margin: var(--big-tb-center-spacer);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
+    transition: 0.6s;
+    margin: var(--big-tb-center-spacer);
+
+}
+
+.register-form-section:hover{
+    box-shadow: 10px 10px;
+}
+
+/* Left Side (Introduction) */
+.register-introduction {
+    width: 50%;
+    background-image: linear-gradient(var(--secondary-color), var(--third-color));
+    color: var(--third-color);
+    font-size: var(--bigger-font-size);
+    padding: 10% 0;
+    text-align: right;
+    font-weight: var(--font-max-bold);
+}
+
+.register-introduction img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+/* Right Side (Form) */
+.register-form-container {
+    width: 50%;
+    padding: var(--five-percent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Headings */
+.register-form-container h2 {
+    font-size: var(--big-font-size);
+    font-weight: var(--font-max-bold);
+}
+
+.register-form-container p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Form Inputs */
+.register-form-container label {
+    font-size: var(--small-font-size);
+    color: var(--primary-color);
+}
+
+.register-form-container input {
+    width: 95%;
+    padding: 2%;
+    border-radius: 8px;
+    margin: var(--small-spacer-tb);
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Register Button */
+.register-btn {
+    padding: var(--btn-pd);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: var(--font-mid-bold);
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border-radius: 6px;
+    border: 2px solid var(--third-color);
+    transition: 0.6s;
+    width: 100%;
+}
+
+.register-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--third-color);
+}
+
+/* Login Link */
+.login-container a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.login-container p, a {
+    margin: var(--small-spacer-tb);
+}
+
+.register-form-container p a:hover {
+    text-decoration: underline;
+}
+
+.admin-dashboard-button{
+    text-align: center;
+    
+}
+
+.admin-dashboard-button button{
+    padding: var(--btn-pd);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: var(--font-mid-bold);
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border-radius: 6px;
+    border: 2px solid var(--third-color);
+    transition: 0.6s;
+}
+
+.admin-dashboard-button button:hover{
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-font-color);
+}
+
+
+/* ============================================== Footer Page Section Style ============================================== */
+
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: var(--mid-tb-center-spacer);
+}
+
+.footer-logo img{
+    height: 20vh;
+    padding: var(--big-spacer-tb);
+}
+
+.footer-quick-links{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    padding: var(--small-spacer-tb);
+    line-height: 2.0;
+    font-weight: var(--font-max-bold);
+
+}
+
+.footer-quick-links a{
+    color: var(--primary-font-color);
+    display: block;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.footer-quick-links a:hover{
+    color: var(--third-color);
+}
+
+.copy-rights{
+    width: 90%;
+    margin: var(--no-tb-center-spacer);
+}
 
 
 

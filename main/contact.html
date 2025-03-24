@@ -27,10 +27,41 @@
 -->
 <body>
     <!-- Contact Introduction Section -->
-    <section class="contact-section">
-
+    <section class="contact-introduction-section">
+        <div class="contact-content-introduction">
+            <h1><span class="highlight">Your Pet’s</span> Next Adventure Starts Here <span class="highlight">Let’s Talk</span>!</h1>
+        <p>Got a question or need to book a session? Mighty Waggers is here to help your furry friend look and feel like a superhero. Reach out today   let’s make tails wag!</p>
+        </div>
+        <img src="../img/contact/contact_intro_img.png" alt="Contact Image">
     </section>
 
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="contact-form-content-container">
+            <img src="../img/contact/contact_img.png" alt="Contact Logo Image">
+            <div class="contact-content">
+                <h2>Get in Touch</h2>
+                <p>Need help or info? Reach out and let’s make a difference!</p>
+                <p>Unit 3, Corner Charlemagne - Abel Nosce St., Fuji-O Residences, BF Resort Dr Village, Las Piñas, Philippines</p>
+                <p>info@mightywaggersph.com</p>
+                <p>0999 814 4464</p>
+            </div>
+        </div>
+        <div class="contact-form-content">
+            <form method="POST" action="submit_contact.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="First Name Last Name" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="name@email.com" required><br><br>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="8" placeholder="Write Anything...." required></textarea><br><br>
+        
+                <button class="contact-btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
     <footer>
 
     </footer>

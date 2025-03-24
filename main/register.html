@@ -27,27 +27,30 @@
 -->
 <body>
     <!-- Login Section Form -->
-<section class="login-form-section">
-    <div class="login-introduction">
-        <img src="../img/contact/contact_img.png" alt="">
-    </div>
+<!-- Register Section Form -->
+<section class="register-form-section">
+    <div class="register-form-container">
+        <h2>Register</h2>
+        <p>Create an account to get started.</p>
+        <form method="POST" action="register.php">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Your Full Name" required />
 
-    <div class="login-form-container">
-        <h2>Login</h2>
-        <p>Welcome back! Please login to your account.</p>
-        <form method="POST" action="login.php">
-            <label for="email">User Name</label>
-            <input type="email" name="email" id="email" placeholder="username@gmail.com" required />
-            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com" required />
+
             <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="********" required />
-            
-            <button class="login-btn" type="submit">Login</button>
+
+            <button class="register-btn" type="submit">Register</button>
         </form>
-        
-        <div class="regiter-container">
-            <p>New User? <a href="register.php">Signup</a></p>
+
+        <div class="login-container">
+            <p>Already have an account? <a href="login.php">Login here</a></p>
         </div>
+    </div>
+    <div class="register-introduction">
+        <img src="../img/contact/contact_img.png" alt="">
     </div>
 </section>
 
