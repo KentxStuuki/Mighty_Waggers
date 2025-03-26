@@ -23,3 +23,23 @@ EC2 instance (dynamic content)
     -login.php
     -process.php
     ...etc.
+
+File Structure (layout)
+
+S3 Bucket (obtain static files of WP landing page)
+- s3-bucket-name/
+  - index.html
+  - css/
+    - styles.css
+  - js/
+    -scripts.css
+  - images/
+    - logo.png
+    - background.jpg
+
+EC2 instance (dynamic content)
+- root folder
+  - php-pages/
+    -login.php
+    -process.php
+    ...etc.
